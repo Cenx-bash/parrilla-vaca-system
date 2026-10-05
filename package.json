@@ -1,0 +1,13 @@
+{
+  "name": "parrilla-vaca-system",
+  "version": "1.0.0",
+  "description": "Table Reservation and Customer Request Management System for Parrilla Vaca Bar & Grill",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "express-session": "^1.18.0"
+  }
+}

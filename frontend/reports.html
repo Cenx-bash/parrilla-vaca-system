@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reports · Parrilla Vaca</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="reports">
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Management</p>
+            <h1>Reports</h1>
+            <p class="sub">Booking volume, peak hours, and repeat guests.</p>
+          </div>
+        </header>
+
+        <section class="card mb-16">
+          <div class="filters" style="margin-bottom: 0">
+            <input class="input" type="date" id="reportFrom" />
+            <span class="muted" style="font-size: 12px">to</span>
+            <input class="input" type="date" id="reportTo" />
+            <button class="btn btn--gold" id="runReport" type="button">
+              Run report
+            </button>
+          </div>
+        </section>
+
+        <section class="stats" id="reportStats"></section>
+
+        <div class="report-grid">
+          <section class="card">
+            <header class="card__head"><h2>Status breakdown</h2></header>
+            <div id="statusBreakdown"></div>
+          </section>
+          <section class="card">
+            <header class="card__head"><h2>Peak dining hours</h2></header>
+            <div id="peakHours"></div>
+          </section>
+        </div>
+
+        <section class="card mt-16">
+          <header class="card__head"><h2>Top returning guests</h2></header>
+          <ul class="rank-list" id="topCustomers"></ul>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast-stack" id="toastStack"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

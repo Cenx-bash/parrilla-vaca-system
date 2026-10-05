@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign in · Parrilla Vaca</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+
+<div class="login">
+  <section class="login__brand">
+    <header class="login__top">
+      <div class="brand">
+        <span class="brand__mark">PV</span>
+        <span class="brand__text">
+          <strong>Parrilla Vaca</strong>
+          <em>Bar &amp; Grill</em>
+        </span>
+      </div>
+      <span class="login__since">Est. Naga City</span>
+    </header>
+
+    <div class="login__statement">
+      <p class="login__lede">
+        Every table, every guest <em>on the books.</em>
+      </p>
+      <p class="login__detail">
+        Reservation and guest request management for the Parrilla Vaca.
+      </p>
+    </div>
+
+    <dl class="login__info">
+      <div>
+        <dt>Location</dt>
+        <dd>M Plaza, Naga City</dd>
+      </div>
+      <div>
+        <dt>Service</dt>
+        <dd>Mon &ndash; Sun &middot; 11:30 AM &ndash; 9:00 PM</dd>
+      </div>
+      <div>
+        <dt>Reservations</dt>
+        <dd>(63+)09277735129</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="login__panel">
+    <form class="login__form" id="loginForm" novalidate>
+      <header class="login__head">
+        <p class="eyebrow">Service</p>
+        <h1>Sign in</h1>
+        <p class="sub">Access is limited to scheduled staff.</p>
+      </header>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input class="input" id="username" name="username" type="text"
+               autocomplete="username" required autofocus
+               placeholder="e.g. staff">
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input class="input" id="password" name="password" type="password"
+               autocomplete="current-password" required
+               placeholder="••••••••">
+      </div>
+
+      <p class="form-error" id="loginError"></p>
+
+      <button class="btn btn--gold btn--block" type="submit">Sign in</button>
+
+      <div class="login__demo">
+        <span class="login__demo-label">Demo accounts</span>
+        <div class="login__demo-row">
+          <code>admin</code><span>/</span><code>admin123</code>
+          <em>Manager</em>
+        </div>
+        <div class="login__demo-row">
+          <code>staff</code><span>/</span><code>staff123</code>
+          <em>Staff</em>
+        </div>
+      </div>
+    </form>
+  </section>
+</div>
+
+<div id="modalRoot"></div>
+<div class="toast-stack" id="toastStack"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Requests · Parrilla Vaca</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="requests">
+    <div class="layout">
+      <aside class="sidebar" id="sidebar"></aside>
+
+      <main class="main">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Guest services</p>
+            <h1>Requests</h1>
+            <p class="sub">
+              Table preferences, dietary needs, and special occasions.
+            </p>
+          </div>
+          <div class="topbar__actions">
+            <button class="btn btn--gold" id="newRequest" type="button">
+              Log request
+            </button>
+          </div>
+        </header>
+
+        <section class="card mb-16">
+          <div class="filters" style="margin-bottom: 0">
+            <select class="input" id="requestStatus">
+              <option value="">All requests</option>
+              <option value="open" selected>Open</option>
+              <option value="in_progress">In progress</option>
+              <option value="resolved">Resolved</option>
+              <option value="cancelled">Cancelled</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="req-list" id="requestList"></section>
+      </main>
+    </div>
+
+    <div id="modalRoot"></div>
+    <div class="toast-stack" id="toastStack"></div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
