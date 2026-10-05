@@ -1,18 +1,6 @@
-# Dependencies
 node_modules/
-
-# Local database (regenerated on first run from connection.js seed)
 backend/database/data.json
-
-# Logs
 *.log
-npm-debug.log*
-
-# OS junk
 .DS_Store
-Thumbs.db
-
-# Editor
 .vscode/
 .idea/
-*.swp
